@@ -1,0 +1,65 @@
+@import url('https://api.fontshare.com/v2/css?f[]=outfit@1&display=swap" rel="stylesheet');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+body{
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1em;
+    font-family: Outfit, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+ul{
+    list-style: none;
+}
+.container{
+    background-color: var(--White);
+    box-shadow: 0px 10px 50px rgba(0,0,0,0.1);
+    padding: 1em 1em 2em 1em;
+    width: 260px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+img{
+    width: 100%;
+    border-radius: .5em;
+}
+.container li:nth-child(2){
+    padding: 0 1em;
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+.container li:nth-child(3){
+    padding: 0 1em;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+    padding: 2em 0;
+    text-align: center;
+    color:var(--Grayish-blue);
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--Dark-blue);
+}
