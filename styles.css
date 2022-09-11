@@ -54,7 +54,7 @@ img{
     color: var(--Grayish-blue);
 }
 .attribution{
-    box-shadow: 0 -2px 0 var(--Light-gray);
+    box-shadow: 0 -1px 0 var(--Light-gray);
     width: 100vw;
     padding: 1.5em 0;
     text-align: center;
