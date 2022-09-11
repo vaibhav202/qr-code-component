@@ -18,20 +18,19 @@ body{
     height: 100vh;
     padding: 0 1em;
     font-family: Outfit, sans-serif;
+    font-size: 1em;
     text-rendering: optimizeLegibility;
 }
-ul{
-    list-style: none;
-}
 .container{
+    margin: 1em;
     background-color: var(--White);
     box-shadow: 0px 10px 50px rgba(0,0,0,0.1);
-    padding: 1em 1em 2em 1em;
-    width: 260px;
+    padding: 1em 1em 0em 1em;
+    width: 280px;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     gap: 1em;
@@ -39,23 +38,25 @@ ul{
     overflow-y: auto;
 }
 img{
-    width: 100%;
+    display: block;
+    max-width: 100%;
     border-radius: .5em;
 }
-.container li:nth-child(2){
+.container h1{
     padding: 0 1em;
+    font-size: 1.16em;
     font-weight: 700;
     color: var(--Dark-blue);
 }
-.container li:nth-child(3){
+.container p{
     padding: 0 1em;
     font-weight: 400;
     color: var(--Grayish-blue);
 }
 .attribution{
-    position: absolute;
-    bottom: 0;
-    padding: 2em 0;
+    box-shadow: 0 -2px 0 var(--Light-gray);
+    width: 100vw;
+    padding: 1.5em 0;
     text-align: center;
     color:var(--Grayish-blue);
 }
